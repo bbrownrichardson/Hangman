@@ -54,7 +54,7 @@ class Hangman
   def incorrect_guess(guess)
     if @num_guesses != 6
       puts "#{guess} is incorrect! Try Again!"
-      puts "You have #{@max_guesses - @num_guesses} left!\n\n"
+      puts "You have #{@max_guesses - @num_guesses} guesses left!\n\n"
       @num_guesses += 1
       puts @selected_letter.join(' ')
     else
